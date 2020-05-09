@@ -1,0 +1,139 @@
+body {
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+}
+:root {
+    --dark: #0a0a0a;
+    --grey: #f6f6f6;
+    --light: #ffffff;
+}
+
+html {
+    height: 100%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+}
+
+.navbar {
+    min-height: 1rem;
+}
+
+.bg-light { background-color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-grey { background-color: var(--grey) !important; }
+
+.border-right, .border-top { border-color: rgba(256, 256, 256, .2) !important;}
+
+.text-dark { color: var(--dark) !important;}
+
+.py-6 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.btn {
+    padding: .75rem 1rem;
+    border-radius: .1rem;
+    font-weight: 700;
+}
+
+.btn-dark {
+    background-color: var(--dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--dark) ;
+}
+
+.badge {
+    padding: .5rem 1rem;
+}
+.badge-secondary {
+    background-color: var(--grey);
+    color: var(--dark);
+}
+
+.menu {
+    height: 100vh;
+}
+
+div.mapa { 
+    height: 428px;
+}
+
+#menu-overlay {
+    height: 100vh;
+    top: 0;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#menu-content {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+#close {
+    display: none;
+}
+
+#open-icon {
+    transition: 1s ease-in-out;
+}
+
+#close-icon {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.z-index-top {
+    z-index: 1010;
+}
+
+#content {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+section {
+    min-height: 100vh;
+}
+
+
+.title {
+    bottom: 2rem;
+    left: 2rem;
+}
+
+
+@media (max-width: 1200px) { 
+    .hero {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .menu {
+        max-height: 80px;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer .text-right {
+        text-align: unset !important;
+    }
+}
+
+@media (max-width: 576px) { 
+    .display-3, .display-4 {
+        font-size: 2rem;
+    }
+}
